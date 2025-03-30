@@ -74,7 +74,7 @@
                 <div class="bg-pastel-lavender p-6 rounded-lg shadow-md sketchy">
                     <h3 class="text-xl text-gray-700 mb-2">Interested in Joining?</h3>
                     <p class="text-gray-600">Learn about how to join NEHE.</p>
-                    <button class="mt-4 bg-pastel-purple hover:bg-purple-400 text-gray-800 font-medium py-2 px-4 rounded sketchy border-0">
+                    <button class="mt-4 bg-pastel-purple hover:bg-purple-400 text-gray-800 font-medium py-2 px-4 rounded sketchy border-0" onclick="document.getElementById('join-nehe').scrollIntoView({behavior: 'smooth'})">
                         How to Join
                     </button>
                 </div>
@@ -82,7 +82,7 @@
                 <div class="bg-pastel-lavender p-6 rounded-lg shadow-md sketchy">
                     <h3 class="text-xl text-gray-700 mb-2">Virtual Meetings</h3>
                     <p class="text-gray-600">Learn about the virtual meetings that NEHE hosts.</p>
-                    <button class="mt-4 bg-pastel-purple hover:bg-purple-400 text-gray-800 font-medium py-2 px-4 rounded sketchy border-0">
+                    <button class="mt-4 bg-pastel-purple hover:bg-purple-400 text-gray-800 font-medium py-2 px-4 rounded sketchy border-0" onclick="document.getElementById('virtual-meetings').scrollIntoView({behavior: 'smooth'})">
                         Learn More
                     </button>
                 </div>
@@ -95,7 +95,6 @@
                 <p class="text-gray-600 mb-6 text-center">Meet the wonderful educators and contributors who make our community thrive.</p>
                 
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <!-- Person 1 -->
                     <div class="bg-white p-4 rounded-lg shadow sketchy text-center">
                         <div class="h-40 bg-pastel-lavender rounded-lg mb-4 flex items-center justify-center">
                             <span class="text-gray-500">Photo</span>
@@ -105,7 +104,6 @@
                         <p class="mt-2 text-sm">Leads hands-on science workshops for all ages.</p>
                     </div>
                     
-                    <!-- Person 2 -->
                     <div class="bg-white p-4 rounded-lg shadow sketchy text-center">
                         <div class="h-40 bg-pastel-lavender rounded-lg mb-4 flex items-center justify-center">
                             <span class="text-gray-500">Photo</span>
@@ -115,7 +113,6 @@
                         <p class="mt-2 text-sm">Makes mathematics fun and engaging through games.</p>
                     </div>
                     
-                    <!-- Person 3 -->
                     <div class="bg-white p-4 rounded-lg shadow sketchy text-center">
                         <div class="h-40 bg-pastel-lavender rounded-lg mb-4 flex items-center justify-center">
                             <span class="text-gray-500">Photo</span>
@@ -125,7 +122,6 @@
                         <p class="mt-2 text-sm">Organizes creative workshops and art exhibitions.</p>
                     </div>
                     
-                    <!-- Person 4 -->
                     <div class="bg-white p-4 rounded-lg shadow sketchy text-center">
                         <div class="h-40 bg-pastel-lavender rounded-lg mb-4 flex items-center justify-center">
                             <span class="text-gray-500">Photo</span>
@@ -135,7 +131,6 @@
                         <p class="mt-2 text-sm">Brings history to life through interactive storytelling.</p>
                     </div>
                     
-                    <!-- Person 5 -->
                     <div class="bg-white p-4 rounded-lg shadow sketchy text-center">
                         <div class="h-40 bg-pastel-lavender rounded-lg mb-4 flex items-center justify-center">
                             <span class="text-gray-500">Photo</span>
@@ -145,7 +140,6 @@
                         <p class="mt-2 text-sm">Fosters a love for reading and creative writing.</p>
                     </div>
                     
-                    <!-- Person 6 -->
                     <div class="bg-white p-4 rounded-lg shadow sketchy text-center">
                         <div class="h-40 bg-pastel-lavender rounded-lg mb-4 flex items-center justify-center">
                             <span class="text-gray-500">Photo</span>
@@ -153,6 +147,49 @@
                         <h3 class="text-xl text-gray-700">Robert Taylor</h3>
                         <p class="text-gray-600">Outdoor Education</p>
                         <p class="mt-2 text-sm">Leads nature exploration and survival skills workshops.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="join-nehe" class="mt-16">
+            <h2 class="text-3xl text-center text-gray-700 mb-8">How to Join NEHE Collaborative</h2>
+            <div class="bg-teal-100 p-6 rounded-lg shadow-md sketchy mb-8">
+                <p class="text-gray-600 mb-6 text-center">Becoming part of our community is easy! Here's how you can join NEHE - Email us at <a href="mailto:nehe@gmail.com">nehe@gmail.com</a></p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-1 gap-6">
+                    <div class="bg-white p-4 rounded-lg shadow sketchy">
+                        <h3 class="text-xl text-gray-700 mb-3 text-center">Membership Requirements</h3>
+                        
+                        <p class="text-gray-600 mb-3 text-center">To be a member of NEHE, you must be one of the following:</p>
+                        <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                            <li>Operate a education program or offer educational services</li>
+                            <li>Licensed tradesperson</li>
+                            <li>Run an educational group</li>
+                            <li>Author or illustrator</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="virtual-meetings" class="mt-16">
+            <h2 class="text-3xl text-center text-gray-700 mb-8">Virtual Meetings</h2>
+            <div class="bg-teal-100 p-6 rounded-lg shadow-md sketchy mb-8">
+                <p class="text-gray-600 mb-6 text-center">Stay connected with our community through regular virtual gatherings.</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white p-4 rounded-lg shadow sketchy text-center">
+                        <div class="h-32 bg-pastel-blue rounded-lg mb-4 flex items-center justify-center">
+                            <span class="text-3xl">👨‍👩‍👧‍👦</span>
+                        </div>
+                        <h3 class="text-xl text-gray-700">Community Meetings</h3>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow sketchy text-center">
+                        <div class="h-32 bg-pastel-pink rounded-lg mb-4 flex items-center justify-center">
+                            <span class="text-3xl">📚</span>
+                        </div>
+                        <h3 class="text-xl text-gray-700">Skillshares & Workshops</h3>
                     </div>
                 </div>
             </div>
