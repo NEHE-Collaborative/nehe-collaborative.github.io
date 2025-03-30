@@ -49,7 +49,7 @@
         }
     </script>
 </head>
-<body class="min-h-screen bg-teal-100">
+<body class="min-h-screen bg-pastel-blue">
     <div class="container mx-auto px-4 py-8">
         <header class="mb-8 text-center">
             <img src="nehelogo.png" alt="NEHE Collaborative Logo" class="mx-auto mb-4 h-36">
@@ -63,15 +63,15 @@
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
-                <div class="bg-pastel-blue p-6 rounded-lg shadow-md sketchy">
+                <div class="bg-pastel-lavender p-6 rounded-lg shadow-md sketchy">
                     <h3 class="text-xl text-gray-700 mb-2">Meet the People</h3>
                     <p class="text-gray-600">Learn about the people who provide learning spaces, run groups and contribute to the homeschooling lifestyle.</p>
-                    <button class="mt-4 bg-pastel-purple hover:bg-purple-400 text-gray-800 font-medium py-2 px-4 rounded sketchy border-0">
+                    <button class="mt-4 bg-pastel-purple hover:bg-purple-400 text-gray-800 font-medium py-2 px-4 rounded sketchy border-0" onclick="document.getElementById('meet-people').scrollIntoView({behavior: 'smooth'})">
                         Meet the People
                     </button>
                 </div>
                 
-                <div class="bg-pastel-green p-6 rounded-lg shadow-md sketchy">
+                <div class="bg-pastel-lavender p-6 rounded-lg shadow-md sketchy">
                     <h3 class="text-xl text-gray-700 mb-2">Interested in Joining?</h3>
                     <p class="text-gray-600">Learn about how to join NEHE.</p>
                     <button class="mt-4 bg-pastel-purple hover:bg-purple-400 text-gray-800 font-medium py-2 px-4 rounded sketchy border-0">
@@ -79,7 +79,7 @@
                     </button>
                 </div>
                 
-                <div class="bg-pastel-orange p-6 rounded-lg shadow-md sketchy">
+                <div class="bg-pastel-lavender p-6 rounded-lg shadow-md sketchy">
                     <h3 class="text-xl text-gray-700 mb-2">Virtual Meetings</h3>
                     <p class="text-gray-600">Learn about the virtual meetings that NEHE hosts.</p>
                     <button class="mt-4 bg-pastel-purple hover:bg-purple-400 text-gray-800 font-medium py-2 px-4 rounded sketchy border-0">
@@ -88,6 +88,75 @@
                 </div>
             </div>
         </main>
+        
+        <section id="meet-people" class="mt-16">
+            <h2 class="text-3xl text-center text-gray-700 mb-8">Meet the People</h2>
+            <div class="bg-teal-100 p-6 rounded-lg shadow-md sketchy mb-8">
+                <p class="text-gray-600 mb-6 text-center">Meet the wonderful educators and contributors who make our community thrive.</p>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Person 1 -->
+                    <div class="bg-white p-4 rounded-lg shadow sketchy text-center">
+                        <div class="h-40 bg-pastel-lavender rounded-lg mb-4 flex items-center justify-center">
+                            <span class="text-gray-500">Photo</span>
+                        </div>
+                        <h3 class="text-xl text-gray-700">Jane Smith</h3>
+                        <p class="text-gray-600">Science Educator</p>
+                        <p class="mt-2 text-sm">Leads hands-on science workshops for all ages.</p>
+                    </div>
+                    
+                    <!-- Person 2 -->
+                    <div class="bg-white p-4 rounded-lg shadow sketchy text-center">
+                        <div class="h-40 bg-pastel-lavender rounded-lg mb-4 flex items-center justify-center">
+                            <span class="text-gray-500">Photo</span>
+                        </div>
+                        <h3 class="text-xl text-gray-700">Michael Johnson</h3>
+                        <p class="text-gray-600">Math Specialist</p>
+                        <p class="mt-2 text-sm">Makes mathematics fun and engaging through games.</p>
+                    </div>
+                    
+                    <!-- Person 3 -->
+                    <div class="bg-white p-4 rounded-lg shadow sketchy text-center">
+                        <div class="h-40 bg-pastel-lavender rounded-lg mb-4 flex items-center justify-center">
+                            <span class="text-gray-500">Photo</span>
+                        </div>
+                        <h3 class="text-xl text-gray-700">Sarah Williams</h3>
+                        <p class="text-gray-600">Arts Coordinator</p>
+                        <p class="mt-2 text-sm">Organizes creative workshops and art exhibitions.</p>
+                    </div>
+                    
+                    <!-- Person 4 -->
+                    <div class="bg-white p-4 rounded-lg shadow sketchy text-center">
+                        <div class="h-40 bg-pastel-lavender rounded-lg mb-4 flex items-center justify-center">
+                            <span class="text-gray-500">Photo</span>
+                        </div>
+                        <h3 class="text-xl text-gray-700">David Chen</h3>
+                        <p class="text-gray-600">History Expert</p>
+                        <p class="mt-2 text-sm">Brings history to life through interactive storytelling.</p>
+                    </div>
+                    
+                    <!-- Person 5 -->
+                    <div class="bg-white p-4 rounded-lg shadow sketchy text-center">
+                        <div class="h-40 bg-pastel-lavender rounded-lg mb-4 flex items-center justify-center">
+                            <span class="text-gray-500">Photo</span>
+                        </div>
+                        <h3 class="text-xl text-gray-700">Emily Martinez</h3>
+                        <p class="text-gray-600">Language Arts</p>
+                        <p class="mt-2 text-sm">Fosters a love for reading and creative writing.</p>
+                    </div>
+                    
+                    <!-- Person 6 -->
+                    <div class="bg-white p-4 rounded-lg shadow sketchy text-center">
+                        <div class="h-40 bg-pastel-lavender rounded-lg mb-4 flex items-center justify-center">
+                            <span class="text-gray-500">Photo</span>
+                        </div>
+                        <h3 class="text-xl text-gray-700">Robert Taylor</h3>
+                        <p class="text-gray-600">Outdoor Education</p>
+                        <p class="mt-2 text-sm">Leads nature exploration and survival skills workshops.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
         
         <footer class="mt-12 pt-6 border-t border-gray-400 text-center text-gray-600">
             <p>&copy; 2025 NEHE Collaborative. Empowering home education across New England.</p>
