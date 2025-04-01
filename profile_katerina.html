@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katerina "Maple" - NEHE Collaborative</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Open+Sans:wght@400;600&family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <style>
+        .sketchy {
+            border: 3px solid #9b9b9b;
+            border-radius: 8px;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        button.sketchy {
+            box-shadow: none;
+        }
+        button.sketchy::before {
+            display: none;
+        }
+        h1, h2, h3, h4, h5, h6, button {
+            font-family: 'Berkshire Swash', cursive;
+        }
+        body, p, li, span {
+            font-family: 'Open Sans', sans-serif;
+        }
+        .subtitle {
+            font-family: 'Berkshire Swash', cursive;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pastel: {
+                            pink: '#FFD1DC',
+                            blue: '#ADDCFF',
+                            green: '#C9F7C9',
+                            yellow: '#FFFFD1',
+                            purple: '#E0C1F0',
+                            orange: '#FFD8B1',
+                            lavender: '#E6E6FA'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="min-h-screen bg-pastel-blue">
+    <div class="container mx-auto px-4 py-8">
+        <header class="mb-8 text-center">
+            <a href="index.html">
+                <img src="nehelogo.png" alt="NEHE Collaborative Logo" class="mx-auto mb-4 h-36">
+            </a>
+            <p class="subtitle text-2xl text-gray-600 mt-2">New England Home Educators Collaborative</p>
+        </header>
+        
+        <main>
+            <div class="bg-pastel-lavender p-6 rounded-lg shadow-md sketchy mb-8">
+                <h2 class="text-3xl text-center text-gray-700 mb-6">Katerina "Maple"</h2>
+                
+                <div class="flex flex-col md:flex-row gap-8 items-center md:items-start">
+                    <div class="w-full md:w-1/3">
+                        <div class="bg-white p-4 rounded-lg shadow sketchy text-center">
+                            <img src="maple.jpeg" alt="Katerina 'Maple'" class="w-full rounded-lg mb-4">
+                            <h3 class="text-xl text-gray-700">Administrator</h3>
+                            <p class="text-gray-600">Tiny Hike Grassroots Cooperative</p>
+                            <p class="mt-2 text-sm"><a target="_blank" rel="noopener noreferrer" href="https://tinyhike.org" class="text-indigo-600 hover:text-indigo-800">tinyhike.org</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="w-full md:w-2/3 bg-white p-6 rounded-lg shadow sketchy">
+                        <p class="text-gray-600 mb-4 text-justify">
+                            My grandmother was a biology teacher for 30 years. Her father, my great-grandfather, was a school director. And my grandfather was an unruly lad who was placed to share a desk with my grandmother by her father, the school director, so that she'd be a good example for him. I spent a lot of my childhood with my grandparents, learning by watching and doing alongside.
+                            She taught me the alphabet, how to read, how to tend a vegetable garden and preserve food. My grandfather let me hold a hammer, hammer along as he built a porch, a kitchen extension, and a sauna. My grandmother made learning so natural, so seamlessly easy. And she did it without a bought curriculum or anything special. It was all everyday things. Like math while at a Farmer Market selling strawberries, measuring ingredients for cooking, going to Senior Gymnastics for physical education, reading the newspaper together, traveling to visit relatives, and gratitude. Learning from her, I learned to love learning by doing. I loved to learn. And I still do. When I found myself in front of a classroom decades later, it just felt natural. I guess it runs in the family.
+                        </p>
+                        
+                        <p class="text-gray-600 mb-4 text-justify">
+                            Our tiny co-op has organized nature walk, playground meet ups, and sensory friendly events. Our new direction is STEAM activities for elementary ages.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-8">
+                <a href="index.html" class="inline-block bg-pastel-purple hover:bg-purple-400 text-gray-800 font-medium py-2 px-6 rounded sketchy border-0">
+                    Back to Homepage
+                </a>
+            </div>
+        </main>
+        
+        <footer class="mt-12 pt-6 border-t border-gray-400 text-center text-gray-600">
+            <p>&copy; 2025 NEHE Collaborative. Empowering home education across New England.</p>
+        </footer>
+    </div>
+</body>
+</html> 
