@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NEHE Collaborative</title>
+    <link rel="icon" href="nehelogo.png" type="image/png">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Open+Sans:wght@400;600&family=Berkshire+Swash&display=swap" rel="stylesheet">
     <style>
@@ -27,6 +28,14 @@
         }
         .subtitle {
             font-family: 'Berkshire Swash', cursive;
+        }
+        @keyframes train-move {
+            0% { transform: translateX(-100%) scaleX(-1); }
+            100% { transform: translateX(100vw) scaleX(-1); }
+        }
+        #train {
+            animation: train-move 15s linear infinite;
+            filter: grayscale(100%);
         }
     </style>
     <script>
@@ -148,7 +157,13 @@
             </div>
         </section>
 
-        <section id="steam" class="mt-16">
+        <div class="overflow-hidden mb-4 relative mt-16">
+            <div id="train" class="text-5xl whitespace-nowrap">
+                🚂🚃🚃🚃🚃
+            </div>
+        </div>
+
+        <section id="steam">
             <h2 class="text-3xl text-center text-gray-700 mb-8">The STEAMM Connection</h2>
                 <div class="bg-teal-100 p-6 rounded-lg shadow-md sketchy mb-8">
                 <p class="text-gray-600 mb-6 text-center">Do you want us to feature you or know someone we should feature? Email <a href="mailto:nehecollaborative@gmail.com">nehecollaborative@gmail.com</a></p>
