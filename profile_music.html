@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music - NEHE Collaborative</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Open+Sans:wght@400;600&family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <style>
+        .sketchy {
+            border: 3px solid #9b9b9b;
+            border-radius: 8px;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        button.sketchy {
+            box-shadow: none;
+        }
+        button.sketchy::before {
+            display: none;
+        }
+        h1, h2, h3, h4, h5, h6, button {
+            font-family: 'Berkshire Swash', cursive;
+        }
+        body, p, li, span {
+            font-family: 'Open Sans', sans-serif;
+        }
+        .subtitle {
+            font-family: 'Berkshire Swash', cursive;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pastel: {
+                            pink: '#FFD1DC',
+                            blue: '#ADDCFF',
+                            green: '#C9F7C9',
+                            yellow: '#FFFFD1',
+                            purple: '#E0C1F0',
+                            orange: '#FFD8B1',
+                            lavender: '#E6E6FA'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="min-h-screen bg-pastel-blue">
+    <div class="container mx-auto px-4 py-8">
+        <header class="mb-8 text-center">
+            <a href="index.html">
+                <img src="nehelogo.png" alt="NEHE Collaborative Logo" class="mx-auto mb-4 h-36">
+            </a>
+            <p class="subtitle text-2xl text-gray-600 mt-2">New England Home Educators Collaborative</p>
+        </header>
+        
+        <main>
+            <div class="bg-pastel-lavender p-6 rounded-lg shadow-md sketchy mb-8">
+                <h2 class="text-3xl text-center text-gray-700 mb-6">Music</h2>
+                
+                <div class="flex flex-col md:flex-row gap-8 items-center md:items-start">
+                    <div class="w-full md:w-1/3">
+                        <div class="bg-white p-4 rounded-lg shadow sketchy text-center">
+                            <img src="music.png" alt="Music" class="w-full rounded-lg mb-4">
+                            <h3 class="text-xl text-gray-700">Rhythm & Musical Expression</h3>
+                            <p class="text-gray-600">STEAM Education</p>
+                        </div>
+                    </div>
+                    
+                    <div class="w-full md:w-2/3 bg-white p-6 rounded-lg shadow sketchy">
+                        <h3 class="text-2xl text-gray-700 mb-4">About Music Programs</h3>
+                        <p class="text-gray-600 mb-4">
+                            Our music programs inspire creativity, expression, and collaboration through exploration of rhythm, melody, and musical forms. We believe in creating a supportive environment where students can discover the joy of making music together.
+                        </p>
+                        <p class="text-gray-600 mb-4">
+                            From learning to play instruments to understanding music theory and composition, students develop both technical skills and appreciation for diverse musical traditions. Our approach emphasizes active participation, creative exploration, and the connections between music and other areas of learning.
+                        </p>
+                        
+                        <h4 class="text-xl text-gray-700 mt-6 mb-3">Areas of Focus</h4>
+                        <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                            <li>Instrumental Music</li>
+                            <li>Vocal Music and Singing</li>
+                            <li>Music Theory and Composition</li>
+                            <li>World Music and Cultural Traditions</li>
+                            <li>Music Technology and Production</li>
+                        </ul>
+                        
+                        <h4 class="text-xl text-gray-700 mt-6 mb-3">Featured Programs</h4>
+                        <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                            <li>Homeschool Music Ensemble</li>
+                            <li>Songwriting Workshop</li>
+                            <li>Music Exploration for Young Children</li>
+                            <li>Digital Music Creation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-8">
+                <a href="index.html" class="inline-block bg-pastel-purple hover:bg-purple-400 text-gray-800 font-medium py-2 px-6 rounded sketchy border-0">
+                    Back to Homepage
+                </a>
+            </div>
+        </main>
+        
+        <footer class="mt-12 pt-6 border-t border-gray-400 text-center text-gray-600">
+            <p>&copy; 2025 NEHE Collaborative. Empowering home education across New England.</p>
+        </footer>
+    </div>
+</body>
+</html> 
