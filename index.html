@@ -7,37 +7,7 @@
     <link rel="icon" href="nehelogo.png" type="image/png">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Open+Sans:wght@400;600&family=Berkshire+Swash&display=swap" rel="stylesheet">
-    <style>
-        .sketchy {
-            border: 3px solid #9b9b9b;
-            border-radius: 8px;
-            position: relative;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        button.sketchy {
-            box-shadow: none;
-        }
-        button.sketchy::before {
-            display: none;
-        }
-        h1, h2, h3, h4, h5, h6, button {
-            font-family: 'Berkshire Swash', cursive;
-        }
-        body, p, li, span {
-            font-family: 'Open Sans', sans-serif;
-        }
-        .subtitle {
-            font-family: 'Berkshire Swash', cursive;
-        }
-        @keyframes train-move {
-            0% { transform: translateX(-100%) scaleX(-1); }
-            100% { transform: translateX(100vw) scaleX(-1); }
-        }
-        #train {
-            animation: train-move 15s linear infinite;
-            filter: grayscale(100%);
-        }
-    </style>
+    <link rel="stylesheet" href="magic.css">
     <script>
         tailwind.config = {
             theme: {
@@ -50,7 +20,7 @@
                             yellow: '#FFFFD1',
                             purple: '#E0C1F0',
                             orange: '#FFD8B1',
-                            lavender: '#E6E6FA'
+                            lavender: '#E6E6FA',
                         }
                     }
                 }
@@ -58,17 +28,17 @@
         }
     </script>
 </head>
-<body class="min-h-screen bg-gray-300">
+<body class="min-h-screen">
     <div class="container mx-auto px-4 py-8">
         <header class="mb-8 text-center">
-            <img src="nehelogo.png" alt="NEHE Collaborative Logo" class="mx-auto mb-4 h-36">
-            <p class="subtitle text-2xl text-gray-600 mt-2">New England Home Educators Collaborative</p>
+            <img src="nehelogo-2.png" alt="NEHE Collaborative Logo" class="mx-auto mb-4 h-36">
+            <p class="subtitle text-2xl text-gray-100 mt-2">New England Home Educators Collaborative</p>
         </header>
         
         <main>
             <div class="bg-pastel-lavender p-6 rounded-lg shadow-md sketchy mb-8">
                 <h2 class="text-2xl text-gray-700 mb-4">Home Education in New England</h2>
-                <p class="text-gray-600 mb-4">The home education scene in New England is full of vibrant learning opportunities for pre-k to 12 learners. The collaborative highlights the people who provide learning spaces, educational and recreational programs, and run groups that contribute to the homeschooling lifestyle.</p>
+                <p class="text-gray-600 mb-4">The home education scene in New England is a vibrant landscape of learning opportunities for pre-k to 12 learners. The collaborative features the people who provide learning spaces, educational and recreational programs, and run groups that contribute to thriving home-based learning. The collaborative also provides STEAM listings across New England.</p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
@@ -95,46 +65,42 @@
             </div>
         </main>
         
-        <section id="meet-people" class="mt-16">
-            <h2 class="text-3xl text-center text-gray-700 mb-8">Meet the People</h2>
-            <div class="bg-teal-100 p-6 rounded-lg shadow-md sketchy mb-8">
+        <section id="featured-listings" class="mt-16">
+            <h2 class="text-3xl text-center text-gray-100 mb-8">Feature Section</h2>
+                <div class="bg-teal-100 p-6 rounded-lg shadow-md sketchy mb-8">
+                <p class="text-gray-600 mb-6 text-center">Do you want to be featured or know someone we should feature? Email <a href="mailto:nehecollaborative@gmail.com">nehecollaborative@gmail.com</a></p>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div class="bg-white p-4 rounded-lg shadow sketchy text-center">
-                        <div class="h-60 bg-pastel-lavender rounded-lg mb-4 flex items-center justify-center bg-cover bg-center bg-no-repeat" style="background-image: url('maple.jpeg'); background-size: fit;">
+                        <div class="h-60 bg-pastel-lavender rounded-lg mb-4 flex items-center justify-center bg-cover bg-center bg-no-repeat" style="background-image: url('chesswizz.png'); background-size: fit;">
                         </div>
-                        <h3 class="text-xl text-gray-700">Katerina "Maple"</h3>
-                        <p class="text-gray-600">Co-founder & Administrator @ Tiny Hike Grassroots Cooperative</p>
-                        <p class="mt-2 text-sm"><a target="_blank" rel="noopener noreferrer" href="https://tinyhike.org">tinyhike.org</a></p>
-                        <a href="profile_katerina.html" class="inline-block mt-3 bg-pastel-purple hover:bg-purple-400 text-gray-800 font-medium py-2 px-4 rounded sketchy border-0">View Profile</a>
+                        <h3 class="text-xl text-gray-700">Chess Wizz</h3>
+                        <p class="mt-2 text-sm"><a target="_blank" rel="noopener noreferrer" href="https://www.chesswizz.com/">chesswizz.com</a></p>
+                        <a href="profile_chesswizz.html" class="inline-block mt-3 bg-pastel-purple hover:bg-purple-400 text-gray-800 font-medium py-2 px-4 rounded sketchy border-0">View Profile</a>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-lg shadow sketchy text-center">
+                        <div class="h-60 bg-white rounded-lg mb-4 flex items-center justify-center bg-cover bg-center bg-no-repeat" style="background-image: url('tinyhike.png'); background-size: contain;">
+                        </div>
+                        <h3 class="text-xl text-gray-700">Tiny Hike</h3>
+                        <p class="mt-2 text-sm"><a target="_blank" rel="noopener noreferrer" href="https://tinyhike.org/">tinyhike.org</a></p>
+                        <a href="profile_tinyhike.html" class="inline-block mt-3 bg-pastel-purple hover:bg-purple-400 text-gray-800 font-medium py-2 px-4 rounded sketchy border-0">View Profile</a>
                     </div>
                     
                     <div class="bg-white p-4 rounded-lg shadow sketchy text-center">
-                        <div class="h-60 bg-pastel-lavender rounded-lg mb-4 flex items-center justify-center bg-cover bg-center bg-no-repeat" style="background-image: url('wiz.png'); background-size: fit;">
+                        <div class="h-60 bg-white rounded-lg mb-4 flex items-center justify-center bg-cover bg-center bg-no-repeat" style="background-image: url('newenglandmusiclessons.png'); background-size: contain; background-color: rgb(47, 53, 136);">
                         </div>
-                        <h3 class="text-xl text-gray-700">Bill</h3>
-                        <p class="text-gray-600">Co-founder & IT Specialist @ Tiny Hike Grassroots Cooperative</p>
-                        <p class="mt-2 text-sm"><a target="_blank" rel="noopener noreferrer" href="https://tinyhike.org">tinyhike.org</a></p>
-                        <a href="profile_bill.html" class="inline-block mt-3 bg-pastel-purple hover:bg-purple-400 text-gray-800 font-medium py-2 px-4 rounded sketchy border-0">View Profile</a>
-                    </div>
-                    
-                    <div class="bg-white p-4 rounded-lg shadow sketchy text-center">
-                        <div class="h-80 rounded-lg mb-4 flex items-center justify-center bg-cover bg-center bg-no-repeat" style="background-image: url('placeholder.png'); background-size: contain;">
-                        </div>
+                        <h3 class="text-xl text-gray-700">New England Music Lessons</h3>
+                        <p class="mt-2 text-sm"><a target="_blank" rel="noopener noreferrer" href="https://www.newenglandmusiclessons.com/">newenglandmusiclessons.com</a></p>
+                        <a href="profile_newenglandmusiclessons.html" class="inline-block mt-3 bg-pastel-purple hover:bg-purple-400 text-gray-800 font-medium py-2 px-4 rounded sketchy border-0">View Profile</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <div class="overflow-hidden mb-4 relative mt-16">
-            <div id="train" class="text-5xl whitespace-nowrap">
-                🚂🚃🚃🚃🚃
-            </div>
-        </div>
-
         <section id="steam">
-            <h2 class="text-3xl text-center text-gray-700 mb-8">The STEAMM Connection</h2>
+            <h2 class="text-3xl text-center text-gray-100 mb-8">The Learning Connection - STEAM</h2>
                 <div class="bg-teal-100 p-6 rounded-lg shadow-md sketchy mb-8">
-                <p class="text-gray-600 mb-6 text-center">Do you want us to feature you or know someone we should feature? Email <a href="mailto:nehecollaborative@gmail.com">nehecollaborative@gmail.com</a></p>
+                <p class="text-gray-600 mb-6 text-center">Would you like to be listed or know someone we should list? Email <a href="mailto:nehecollaborative@gmail.com">nehecollaborative@gmail.com</a></p>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div class="bg-white p-4 rounded-lg shadow sketchy text-center">
                         <div class="h-60 bg-white rounded-lg mb-4 flex items-center justify-center bg-cover bg-center bg-no-repeat" style="background-image: url('s.png'); background-size: contain;">
@@ -187,40 +153,38 @@
             </div>
         </section>
 
-        <section id="featured-listings" class="mt-16">
-            <h2 class="text-3xl text-center text-gray-700 mb-8">Featured Listings</h2>
-                <div class="bg-teal-100 p-6 rounded-lg shadow-md sketchy mb-8">
-                <p class="text-gray-600 mb-6 text-center">Do you want us to feature you or know someone we should feature? Email <a href="mailto:nehecollaborative@gmail.com">nehecollaborative@gmail.com</a></p>
+        <section id="meet-people" class="mt-16">
+            <h2 class="text-3xl text-center text-gray-100 mb-8">Meet the People</h2>
+            <div class="bg-teal-100 p-6 rounded-lg shadow-md sketchy mb-8">
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div class="bg-white p-4 rounded-lg shadow sketchy text-center">
-                        <div class="h-60 bg-pastel-lavender rounded-lg mb-4 flex items-center justify-center bg-cover bg-center bg-no-repeat" style="background-image: url('chesswizz.png'); background-size: fit;">
+                        <div class="h-60 bg-pastel-lavender rounded-lg mb-4 flex items-center justify-center bg-cover bg-center bg-no-repeat" style="background-image: url('maple.jpeg'); background-size: fit;">
                         </div>
-                        <h3 class="text-xl text-gray-700">Chess Wizz</h3>
-                        <p class="mt-2 text-sm"><a target="_blank" rel="noopener noreferrer" href="https://www.chesswizz.com/">chesswizz.com</a></p>
-                        <a href="profile_chesswizz.html" class="inline-block mt-3 bg-pastel-purple hover:bg-purple-400 text-gray-800 font-medium py-2 px-4 rounded sketchy border-0">View Profile</a>
-                    </div>
-
-                    <div class="bg-white p-4 rounded-lg shadow sketchy text-center">
-                        <div class="h-60 bg-white rounded-lg mb-4 flex items-center justify-center bg-cover bg-center bg-no-repeat" style="background-image: url('forestbox.jpg'); background-size: contain;">
-                        </div>
-                        <h3 class="text-xl text-gray-700">The Forest Box for Kids</h3>
-                        <p class="mt-2 text-sm"><a target="_blank" rel="noopener noreferrer" href="https://www.theforestboxforkids.com/">theforestboxforkids.com</a></p>
-                        <a href="profile_forestbox.html" class="inline-block mt-3 bg-pastel-purple hover:bg-purple-400 text-gray-800 font-medium py-2 px-4 rounded sketchy border-0">View Profile</a>
+                        <h3 class="text-xl text-gray-700">Katerina "Maple"</h3>
+                        <p class="text-gray-600">Co-founder & Administrator @ Tiny Hike Grassroots Cooperative</p>
+                        <p class="mt-2 text-sm"><a target="_blank" rel="noopener noreferrer" href="https://tinyhike.org">tinyhike.org</a></p>
+                        <a href="profile_katerina.html" class="inline-block mt-3 bg-pastel-purple hover:bg-purple-400 text-gray-800 font-medium py-2 px-4 rounded sketchy border-0">View Profile</a>
                     </div>
                     
                     <div class="bg-white p-4 rounded-lg shadow sketchy text-center">
-                        <div class="h-60 bg-white rounded-lg mb-4 flex items-center justify-center bg-cover bg-center bg-no-repeat" style="background-image: url('letchildrenplay.png'); background-size: contain;">
+                        <div class="h-60 bg-pastel-lavender rounded-lg mb-4 flex items-center justify-center bg-cover bg-center bg-no-repeat" style="background-image: url('wiz.png'); background-size: fit;">
                         </div>
-                        <h3 class="text-xl text-gray-700">Let Children Play LLC</h3>
-                        <p class="mt-2 text-sm"><a target="_blank" rel="noopener noreferrer" href="https://www.letchildrenplayllc.com/">letchildrenplayllc.com</a></p>
-                        <a href="profile_letchildrenplay.html" class="inline-block mt-3 bg-pastel-purple hover:bg-purple-400 text-gray-800 font-medium py-2 px-4 rounded sketchy border-0">View Profile</a>
+                        <h3 class="text-xl text-gray-700">Bill</h3>
+                        <p class="text-gray-600">Co-founder & IT Specialist @ Tiny Hike Grassroots Cooperative</p>
+                        <p class="mt-2 text-sm"><a target="_blank" rel="noopener noreferrer" href="https://tinyhike.org">tinyhike.org</a></p>
+                        <a href="profile_bill.html" class="inline-block mt-3 bg-pastel-purple hover:bg-purple-400 text-gray-800 font-medium py-2 px-4 rounded sketchy border-0">View Profile</a>
+                    </div>
+                    
+                    <div class="bg-white p-4 rounded-lg shadow sketchy text-center">
+                        <div class="h-80 rounded-lg mb-4 flex items-center justify-center bg-cover bg-center bg-no-repeat" style="background-image: url('placeholder.png'); background-size: contain;">
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <section id="Podcast & More" class="mt-16">
-            <h2 class="text-3xl text-center text-gray-700 mb-8">Stay Connected</h2>
+            <h2 class="text-3xl text-center text-gray-100 mb-8">Stay Connected</h2>
             <div class="bg-teal-100 p-6 rounded-lg shadow-md sketchy mb-8">
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -237,9 +201,9 @@
         </section>
         
         <section id="join-nehe" class="mt-16">
-            <h2 class="text-3xl text-center text-gray-700 mb-8">How to Join NEHE Collaborative</h2>
+            <h2 class="text-3xl text-center text-gray-100 mb-8">Join NEHE Collaborative</h2>
             <div class="bg-teal-100 p-6 rounded-lg shadow-md sketchy mb-8">
-                <p class="text-gray-600 mb-6 text-center">Becoming part of our community is easy! Here's how you can join NEHE - Email us at <a href="mailto:nehecollaborative@gmail.com">nehecollaborative@gmail.com</a></p>
+                <p class="text-gray-600 mb-6 text-center">Becoming a member is easy! To join NEHE email us <a href="mailto:nehecollaborative@gmail.com">nehecollaborative@gmail.com</a></p>
                 
                 <div class="grid grid-cols-1 md:grid-cols-1 gap-6">
                     <div class="bg-white p-4 rounded-lg shadow sketchy">

@@ -1,0 +1,29 @@
+.sketchy {
+    border: 0px solid #9b9b9b;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+button.sketchy {
+    box-shadow: none;
+}
+button.sketchy::before {
+    display: none;
+}
+h1, h2, h3, h4, h5, h6, button {
+    font-family: 'Berkshire Swash', cursive;
+}
+body, p, li, span {
+    font-family: 'Open Sans', sans-serif;
+}
+.subtitle {
+    font-family: 'Berkshire Swash', cursive;
+}
+
+body {
+    background-color: #1a5704;
+}
+
+footer {
+    color: #ffffff !important;
+}
